@@ -1,0 +1,20 @@
+Installation :
+
+pip install opencv-python
+pip install torch
+pip install torchvision
+pip install tqdm
+
+
+YOLOv5 :
+
+git clone https://github.com/ultralytics/yolov5
+cd yolov5
+pip install -r requirements.txt
+
+
+Lancer l'entraînement :
+
+python3 train.py --img 640 --batch 16 --epochs 50 --data ../data.yaml --cfg models/yolov5s.yaml --weights yolov5s.pt
+
+
