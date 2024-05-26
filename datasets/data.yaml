@@ -8,6 +8,6 @@ names: ['Titre', 'date', 'description', 'total', 'tva']
 roboflow:
   workspace: work-kbidj
   project: tva_project
-  version: 1
+  version: 2
   license: CC BY 4.0
-  url: https://universe.roboflow.com/work-kbidj/tva_project/dataset/1
+  url: https://universe.roboflow.com/work-kbidj/tva_project/dataset/2
