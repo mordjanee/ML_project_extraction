@@ -3,10 +3,10 @@ import cv2
 from pathlib import Path
 import pytesseract
 
-# Charger le modèle entraîné
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp17/weights/best.pt')
 
-img_path = 'datasets/test/images/nom_image_332_jpg.rf.2190970c80a5fbe030fab7aeb24da940.jpg'
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp18/weights/best.pt')
+
+img_path = 'datasets/test/images/nom_image_377_jpg.rf.758137bdcf1eddb782020f3ba59a1e10.jpg'
 img = cv2.imread(img_path)
 results = model(img)
 
