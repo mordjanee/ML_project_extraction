@@ -5,8 +5,10 @@ import numpy as np
 from PIL import Image
 import pytesseract
 
-
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp18/weights/best.pt')
+#exp17 v0
+#exp18 v1
+#exp22 v2
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp22/weights/best.pt')
 
 def detect_text(image):
     results = model(image)

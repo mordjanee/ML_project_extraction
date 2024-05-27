@@ -1,8 +1,8 @@
 
-TVA_project - v2 2024-05-26 12:49pm
+TVA_project - v4 2024-05-27 7:21pm
 ==============================
 
-This dataset was exported via roboflow.com on May 26, 2024 at 10:49 AM GMT
+This dataset was exported via roboflow.com on May 27, 2024 at 5:21 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 179 images.
+The dataset includes 128 images.
 Tva are annotated in YOLO v5 PyTorch format.
 
 The following pre-processing was applied to each image:
