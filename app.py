@@ -47,12 +47,13 @@ if uploaded_file is not None:
     for *box, conf, cls in detections:
         x1, y1, x2, y2 = map(int, box)
         cropped_img = image[y1:y2, x1:x2]
-        #text = pytesseract.image_to_string(cropped_img)
-        #st.write(f'Texte détecté: {text}')
-        
-        # Dessiner les boîtes et le texte sur l'image
+
         color = class_colors.get(int(cls), (255, 255, 255))
         label = class_name.get(int(cls))
+
+        text = pytesseract.image_to_string(cropped_img)
+        st.write(f'{label} : {text}')
+        
         cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
         cv2.putText(image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, color, 2)
     
